@@ -1,0 +1,21 @@
+# Dependencies
+frontend/node_modules
+backend/.venv
+backend - 副本/.venv
+*.pyc
+__pycache__
+
+# Env files
+backend/.env
+backend - 副本/.env
+
+# IDE
+.idea
+*.iml
+
+# Build output
+frontend/dist
+
+# OS
+.DS_Store
+Thumbs.db
