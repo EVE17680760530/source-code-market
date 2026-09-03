@@ -50,7 +50,7 @@ function filterProjects(projects, params) {
 export const projectApi = {
   async list(params = {}) {
     if (!projectsCache) {
-      projectsCache = await loadJson('/data/projects.json')
+      projectsCache = await loadJson('./data/projects.json')
     }
     const filtered = filterProjects(projectsCache, params)
 
@@ -64,7 +64,7 @@ export const projectApi = {
 
   async get(id) {
     if (!projectsCache) {
-      projectsCache = await loadJson('/data/projects.json')
+      projectsCache = await loadJson('./data/projects.json')
     }
     const project = projectsCache.find((p) => p.id === Number(id))
     if (!project) {
@@ -95,7 +95,7 @@ export const projectApi = {
 export const categoryApi = {
   async list() {
     if (!categoriesCache) {
-      categoriesCache = await loadJson('/data/categories.json')
+      categoriesCache = await loadJson('./data/categories.json')
     }
     return mockResponse(categoriesCache)
   },
