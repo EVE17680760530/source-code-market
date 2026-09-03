@@ -13,8 +13,8 @@ backend - 副本/.env
 .idea
 *.iml
 
-# Build output
-frontend/dist
+# Build output (must keep for GitHub Pages deployment)
+# frontend/dist - required for GitHub Pages, DO NOT ignore
 
 # OS
 .DS_Store
